@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <!-- Write your comments here -->
-</head>
-<body class="bg-gray-100 p-30">
-<!-- Animated favicon-gif -->
-<img class="max-w-15 pt-6 pl-6 pb-6" src="img/V_favicon.gif" alt="V favicon">
+  <!--1. Solved the padding issue, turns out that not all options are represented in output.css
+  and I could write in the rule I wanted and then it's properly applied itself when used in index.html-->
+  <!-- 2. We can literally go in the developer tools, check breakpoints and apply padding to sections
+  The same should be true with regards to the styling -->
+
+  </head>
+
+<!-- There is a little padding on the body to account for the favicon-->
+<body class="pt-6 pl-6 gray-100">
+
+  <!-- Animated favicon-gif -->
+<img class="pb-20 max-w-10" src="img/V_favicon.gif" alt="V favicon">
+
+<!-- This section is for the entire page structure as it behaves differently than the favicon -->
+<section class="block pt-6 pl-3 pr-3 mx-auto md:grid max-w-max">
 
 <!-- Our main tagline -->
-<h1 class="text-green-700 font-serif text-6xl font-bold">
+<h1 class="font-serif text-6xl font-bold text-green-700">
     turn your <span class="italic font-medium"> videos</span><br> into fun <span class="italic font-medium">flipbooks!</span>
 </h1>
 
@@ -26,7 +37,7 @@
   <h2 class="text-3xl font-bold underline">
     Hello world!
   </h2>
-  <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+  <div class="flex items-center max-w-sm p-6 mx-auto bg-white shadow-lg gap-x-4 rounded-xl outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
     <img class="size-12 shrink-0" src="/img/logo.svg" alt="ChitChat Logo" />
     <div>
       <div class="text-xl font-medium text-black dark:text-white">ChitChat</div>
@@ -34,18 +45,18 @@
     </div>
   </div>
 
-  <div class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl">
+  <div class="max-w-md mx-auto overflow-hidden bg-white shadow-md rounded-xl md:max-w-2xl">
     <div class="md:flex">
       <div class="md:shrink-0">
         <img
-          class="h-48 w-full object-cover md:h-full md:w-48"
+          class="object-cover w-full h-48 md:h-full md:w-48"
           src="/img/building.jpg"
           alt="Modern building architecture"
         />
       </div>
       <div class="p-8">
         <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">Company retreats</div>
-        <a href="#" class="mt-1 block text-lg leading-tight font-medium text-black hover:underline">
+        <a href="#" class="block mt-1 text-lg font-medium leading-tight text-black hover:underline">
           Incredible accommodation for your team
         </a>
         <p class="mt-2 text-gray-500">
@@ -57,6 +68,6 @@
   </div>
 
 
-
+</section>
 </body>
 </html>
