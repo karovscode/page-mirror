@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+
   <!-- Write your comments here -->
   <!--1. Solved the padding issue, turns out that not all options are represented in output.css
   and I could write in the rule I wanted and then it's properly applied itself when used in index.html-->
@@ -12,14 +13,16 @@
 
   </head>
 
-<!-- There is a little padding on the body to account for the favicon-->
+<!-- There is a little padding on the body to account for some of the favicon-->
 <body class="pt-6 pl-6 gray-100">
 
-  <!-- Animated favicon-gif -->
+  <!-- Animated favicon-gif , not sure how to set it up
+   as it behaves differently from the rest of the page-->
 <img class="pb-20 max-w-10" src="img/V_favicon.gif" alt="V favicon">
 
 <!-- This section is for the entire page structure as it behaves differently than the favicon -->
-<section class="block pt-6 pl-3 pr-3 mx-auto md:grid max-w-max">
+<!--I've decided to work on each small section separately as I can't understand gris and flex in Tailwind yet -->
+<section class="grid gr,id-cols-[1fr_2.5rem_auto_2.5rem_1fr] grid-rows-[1fr_1px_auto_1px_1fr]">
 
 <!-- Our main tagline -->
 <h1 class="font-serif text-6xl font-bold text-green-700">
@@ -30,42 +33,18 @@
     Make your favorite videos into real books you can flip through. Perfect for gifts or keeping memories.
 </p>
 
+</section>
+
+<section class="">
+
+<div class="bg-red-500 rounded-lg shadow-xl min-h-50"></div>
+<div class="bg-green-500 rounded-lg shadow-xl min-h-50"></div>
+<div class="bg-orange-500 rounded-lg shadow-xl min-h-50"></div>
+<div class="rounded-lg shadow-xl bg-amber-500 min-h-50"></div>
 
 
+<div class="bg-blue-500 rounded-lg shadow-xl min-h-[50px]"></div>
 
-
-  <h2 class="text-3xl font-bold underline">
-    Hello world!
-  </h2>
-  <div class="flex items-center max-w-sm p-6 mx-auto bg-white shadow-lg gap-x-4 rounded-xl outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-    <img class="size-12 shrink-0" src="/img/logo.svg" alt="ChitChat Logo" />
-    <div>
-      <div class="text-xl font-medium text-black dark:text-white">ChitChat</div>
-      <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
-    </div>
-  </div>
-
-  <div class="max-w-md mx-auto overflow-hidden bg-white shadow-md rounded-xl md:max-w-2xl">
-    <div class="md:flex">
-      <div class="md:shrink-0">
-        <img
-          class="object-cover w-full h-48 md:h-full md:w-48"
-          src="/img/building.jpg"
-          alt="Modern building architecture"
-        />
-      </div>
-      <div class="p-8">
-        <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">Company retreats</div>
-        <a href="#" class="block mt-1 text-lg font-medium leading-tight text-black hover:underline">
-          Incredible accommodation for your team
-        </a>
-        <p class="mt-2 text-gray-500">
-          Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of
-          places to do just that.
-        </p>
-      </div>
-    </div>
-  </div>
 
 
 </section>
